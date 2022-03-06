@@ -1,3 +1,77 @@
 body {
-  background-color: teal;  
+  background-color: rgb(175, 139, 211); 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table{
+  position: relative;
+  top: -30px;
+  background-color: rgb(240, 184, 235);
+  padding: 5px;
+  border: 1px solid #000;
+  text-align: center;
+  height: 500px;
+  width: 200px; 
+}
+section{
+  position: absolute;
+  padding: 20px;
+  width:400px;
+}
+aside{
+  position: absolute;
+  padding: 3cm;
+  top:30px;
+  left:400px;
+  width: 500px;
+  
+}
+img{
+  padding: 10px;
+  margin: 10px;
+  width:100px;
+}
+
+#love {
+color:darkblue;
+font-size: 1em;
+text-align: center;
+}
+
+.form {
+  border: 1px dotted #999;
+  border-radius: 0;
+  font-size: 1rem;
+  background-color: rgb(240, 184, 235);
+  width: 200px;
+  text-align: center;
+  margin: 0px 100px 80px;
+
+}
+.link{
+  font-size: 20px;
+  color:#546;
+  position: relative;
+  font-family: Georgia, serif;
+  border-radius: 4px;
+}
+.link::before{
+  content:"смотриииии";
+  left: -50px;
+  position: relative;
+  font-family: Georgia, serif;
+  font-size: 15px;
+
+}
+.link::after{
+  content: "обязательно глянь";
+  position: relative;
+  left: 50px;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  right: 6px;
+  
+}
+th::first-line {
+  text-transform: uppercase;
+  border: 2px 5px;
 }
