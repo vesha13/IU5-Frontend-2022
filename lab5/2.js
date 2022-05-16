@@ -13,7 +13,17 @@
  * console.log(curry(add)(1, 2, 3)); //6
  */
 function curry(f) {
-    //code here
+
+    function summ(...args){
+        if (args.length < f.length){
+            res= (...newargs) => summ.apply(this, args.concat(newargs));}
+        else
+         {res= f(...args)}
+        return res
+    }
+
+    return summ
+
 }
 
 module.exports = curry;

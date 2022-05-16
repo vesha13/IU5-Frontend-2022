@@ -14,7 +14,41 @@
  */
 
 function memoize(func) {
-    //code here
+   /** let res;
+    return f = (...args) =>
+    {
+        function cch(...args){res = func(...args); return (res === func(...args))}
+        res = func(...args);
+        let obj={
+            cache: cch(arguments),
+            result: res
+          };
+        return obj;
+    };*/
+
+    let res;
+    function final(...args)
+    {
+        let cache= (res === func(...args));
+        res = func(...args);
+        let obj={
+            cache: cache,
+            result: res
+        }
+        return obj
+    };
+    return final
+/**
+    this.func =func;
+    function cch(...args){res = func(...args); return (res === func(...args))}
+    function result(...args) {rrr=func(...args); return rrr}
+    let obj={
+        cache: cch(arguments),
+        result: result(this.func)
+      };
+      function res1(){console.log(obj);return obj};
+      return res1 */
+
 }
 
 module.exports = memoize;
