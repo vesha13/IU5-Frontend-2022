@@ -31,7 +31,7 @@ function getAnagramms(arr) {
       b++;
       removed=[];
     }
-        return change 
+        return change
 
 }
 
