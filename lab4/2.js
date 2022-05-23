@@ -23,7 +23,7 @@ function isPalindrome(str) {
             break top;
         }
     }
-    return b; 
+    return b;
 }
 
 module.exports = isPalindrome;
