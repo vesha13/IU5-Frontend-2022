@@ -28,7 +28,6 @@ function memoize(func) {
         return obj
     };
     return final
-
 }
 
 module.exports = memoize;

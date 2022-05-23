@@ -9,7 +9,6 @@
 function customBind(f, context) {
    let funk= (...args) => f.apply(context, args);
    return funk
-
 }
 
 module.exports = customBind;
