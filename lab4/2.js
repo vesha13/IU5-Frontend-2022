@@ -15,7 +15,6 @@ function isPalindrome(str) {
     else{
         a=str.length/2-1/2;
     }
-
     top:
     for (let i=0; i<a; i++)
     {

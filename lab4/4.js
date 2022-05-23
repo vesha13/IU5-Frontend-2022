@@ -29,7 +29,7 @@ let b=[];
             b.push(parseInt(strCopy[i]));
         }
         else{ b.push(strCopy[i]);}
-    }
+    } 
     return b}
 }
 

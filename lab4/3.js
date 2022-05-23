@@ -26,7 +26,6 @@ function rle(str) {
             b=1;
         }
     }
-
     return narr.join('')
 }
 
