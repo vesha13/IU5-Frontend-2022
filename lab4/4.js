@@ -30,7 +30,7 @@ let b=[];
         }
         else{ b.push(strCopy[i]);}
     }
-    return b} 
+    return b}
 }
 
 module.exports = get1DArray;
