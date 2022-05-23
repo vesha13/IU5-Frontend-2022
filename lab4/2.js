@@ -22,7 +22,6 @@ function isPalindrome(str) {
             b=false
             break top;
         }
-
     }
     return b;
 }
