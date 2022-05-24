@@ -29,7 +29,7 @@
     e.preventDefault();},
     1000);
     };
-
+ 
     //time.addEventListener("mouseleave", stop);
     time.addEventListener("mouseenter", sstart, {once:false});
     time.onmouseleave = () => clearInterval(Inter);

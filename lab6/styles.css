@@ -60,18 +60,26 @@
     .def{cursor: default;}
 
     #love {
-        
+
         display: flex;
         justify-content: center;
         align-items: center;
         align-items: center;
-        margin-top: 20px;;
+        width: 745px;
+        height: 745px;
+
+        }
+    #around{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
         width: 800px;
         height: 800px;
         border: solid 3px;
         border-color: black;
-
-        }
+    }
 
         .count {
             align-items: center;
