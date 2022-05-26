@@ -27,46 +27,12 @@ addEventListener('click', search, false);
 addEventListener('keydown', search, false);
 
 function change(data){
+    setWeath(data);
 
     let zero;
         if (Math.round(data.main.temp -273.15)>0)
             zero= " degres above zero";
         else zero =" degres below zero";
-    console.log(data.weather[0].description[0].toUpperCase() + data.weather[0].description.slice(1));
-
-        switch( data.weather[0].description[0].toUpperCase() + data.weather[0].description.slice(1)){
-        case "Clear sky":
-            document.getElementById("now").style.backgroundImage = "url('image/clear.jpg')";
-            break;
-        case "Few clouds":
-            document.getElementById("now").style.backgroundImage = "url('image/few.jpg')";
-            break;
-            case "Overcast clouds":
-                document.getElementById("now").style.backgroundImage = "url('image/over.jpg')";
-                break;
-        case "Scattered clouds":
-            document.getElementById("now").style.backgroundImage = "url('image/scet.jpg')";
-            break;
-        case "Broken clouds":
-            document.getElementById("now").style.backgroundImage = "url('image/broken.jpg')";
-            break;
-        case "Shower rain":
-            document.getElementById("now").style.backgroundImage = "url('image/shower.jpg')";
-            break;
-        case "Rain":
-            document.getElementById("now").style.backgroundImage = "url('image/rain.png')";
-            break;
-        case "Thunderstorm":
-            document.getElementById("now").style.backgroundImage = "url('image/thoun.jpg')";
-            break;
-        case "Snow":
-            document.getElementById("now").style.backgroundImage = "url('image/snow.jpg')";
-            break;
-        case "Mist":
-            document.getElementById("now").style.backgroundImage = "url('image/mist.jpg')";
-            break;
-
-    }
 
         document.getElementById("cityName").innerText= "Weather in " + data.name;
         document.getElementById("descr").innerText = data.weather[0].description[0].toUpperCase() + data.weather[0].description.slice(1);
@@ -92,3 +58,31 @@ function best(){
         document.getElementById("sas").style.backgroundImage= "url('image/wel.jpeg')";
 }
 
+function setWeath(data){
+    let weath =data.weather[0].description;
+    document.getElementById("now").style.backgroundImage = "url('image/broken.jpg')";
+    if (weath.includes("rain"))  document.getElementById("now").style.backgroundImage = "url('image/rain.png')";
+            else if (weath.includes("shower")) document.getElementById("now").style.backgroundImage = "url('image/shower.jpg')";
+            else if (weath.includes("thunderstorm")) document.getElementById("now").style.backgroundImage = "url('image/thoun.jpg')";
+            else if (weath.includes("snow")) document.getElementById("now").style.backgroundImage = "url('image/snow.jpg')";
+            else if (weath.includes("mist")||weath.includes("fog"))  document.getElementById("now").style.backgroundImage = "url('image/mist.jpg')";
+            else {
+                switch(weath){
+                    case "clear sky":
+                        document.getElementById("now").style.backgroundImage = "url('image/clear.jpg')";
+                        break;
+                    case "few clouds":
+                        document.getElementById("now").style.backgroundImage = "url('image/few.jpg')";
+                        break;
+                        case "overcast clouds":
+                            document.getElementById("now").style.backgroundImage = "url('image/over.jpg')";
+                            break;
+                    case "scattered clouds":
+                        document.getElementById("now").style.backgroundImage = "url('image/scet.jpg')";
+                        break;
+                }
+        }
+
+
+
+}
