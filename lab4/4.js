@@ -17,7 +17,20 @@
 */
 
 function get1DArray(arr) {
-    //code here
+    let newstr = arr.toString();
+let b=[];
+
+    const strCopy = newstr.split(',');
+    if (strCopy == "")
+    {return b;}
+    else{
+    for(let i=0; i<strCopy.length; i++){
+        if (Number.isInteger(parseInt(strCopy[i])) === true){
+            b.push(parseInt(strCopy[i]));
+        }
+        else{ b.push(strCopy[i]);}
+    }
+    return b}
 }
 
 module.exports = get1DArray;
