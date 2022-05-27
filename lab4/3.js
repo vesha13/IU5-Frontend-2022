@@ -8,7 +8,25 @@
  */
 
 function rle(str) {
-    //code here
+    let b=1;
+    let arr =[];
+    let narr =[];
+   for(let i=0; i<str.length; i++)
+   {arr[i]=str[i];}
+    for (let key in arr){
+        if (arr[key]===arr[key-1])
+        {
+             b++;
+             if( key == arr.length-1){ narr.push(b);}
+        }
+        else{
+            if(b!=1){
+                narr.push(b);}
+            narr.push(arr[key]);
+            b=1;
+        }
+    }
+    return narr.join('') 
 }
 
 module.exports = rle;
