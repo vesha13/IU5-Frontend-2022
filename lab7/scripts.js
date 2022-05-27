@@ -2,7 +2,6 @@
 const api =  "58276d2fb015c0846c12a66b4cc972b1";
 
 check("Tokyo");
-
 function check(city) {
     console.log(city)
     let url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&lang=en&appid=" + api;
