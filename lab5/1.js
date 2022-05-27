@@ -10,6 +10,6 @@
  Array.prototype.myMap = function myMap(func)
  {
     const arr =[];
-    this.func=func;
+    this.func=func; 
     return this.reduce((array, value) => array.concat(this.func(value)), arr);
  };

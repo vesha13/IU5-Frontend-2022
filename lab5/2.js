@@ -21,7 +21,6 @@ function curry(f) {
          {res= f(...args)}
         return res
     }
-
     return summ
 
 }
