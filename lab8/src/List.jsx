@@ -9,7 +9,7 @@ function List({todo, Tap, done}){
     {
         classChange.push("out");
     }
-    return ( 
+    return (  
         <div className = 'List'>
             <img className="del" src={yes} alt="Y" onClick = {() => Tap(todo.id)}/>
 

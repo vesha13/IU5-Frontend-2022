@@ -28,7 +28,7 @@ function App() {
               if (todo.id === id) { todo.completed = !todo.completed }
               return todo;
           }))
-    } 
+    }
 
   return (
     <div className = "App">

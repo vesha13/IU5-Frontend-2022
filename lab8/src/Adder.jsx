@@ -10,7 +10,7 @@ function Adder({addTask}) {
         setUserInput('')
     }
 
-    return ( 
+    return (  
         <div onSubmit = {handleSubmit} className='Adder'>
             <input
             class='input'
