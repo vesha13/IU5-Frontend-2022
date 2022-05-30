@@ -1,26 +1,39 @@
 {
-
-    "name": "lab8",
-    "version": "1.0.0",
-    "description": "",
-    "workspaces": [
-        "./"
+  "name": "lab8",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "dependencies": {
-        "express": "^4.17.1"
-    },
-    "devDependencies": {
-        "jest": "^26.6.3"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js",
-        "test-lab-3": "jest lab3.test.js",
-        "test-lab-4": "jest lab4.test.js",
-        "test-lab-5": "jest lab5.test.js",
-        "build": "cd lab8 && npm run build && cd ../lab9 && npm run build",
-        "vercel-install": "npm install --only=production && cd lab8/ && npm i && cd ../lab9/ && npm i"
-    },
-    "author": "",
-    "license": "ISC"
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
