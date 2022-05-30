@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import './App.css';
 
-function Adder({addTask}) { 
+function Adder({addTask}) {
     const[userInput, setUserInput] = useState('')
-
+ 
     const handleSubmit = (e) =>{
         e.preventDefault()
         addTask(userInput)
