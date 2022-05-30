@@ -8,9 +8,9 @@ function Adder({addTask}) {
         e.preventDefault()
         addTask(userInput)
         setUserInput('')
-    }
+    } 
 
-    return (  
+    return (
         <div onSubmit = {handleSubmit} className='Adder'>
             <input
             class='input'
