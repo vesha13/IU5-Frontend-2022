@@ -4,7 +4,6 @@ import del from './del.png'
 import yes from './yes.png'
 function List({todo, Tap, done}){
     const classChange = ["item-text"]
-
     if (todo.completed)
     {
         classChange.push("out");

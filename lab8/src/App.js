@@ -22,13 +22,13 @@ function App() {
     }
 
 
-    const Tap = (id) => { 
+    const Tap = (id) => {
         SetGoal(goal.map(todo =>
             {
               if (todo.id === id) { todo.completed = !todo.completed }
               return todo;
           }))
-    }
+    } 
 
   return (
     <div className = "App">
