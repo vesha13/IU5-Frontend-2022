@@ -19,7 +19,7 @@ function List({todo, Tap, done}){
                 </div>
                     <img className="del" src={del} alt="N" onClick = {() => done(todo.id)}/>
             </div>
-        </div> 
+        </div>
     )
 }
 
