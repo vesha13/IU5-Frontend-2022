@@ -28,7 +28,7 @@ function App() {
               if (todo.id === id) { todo.completed = !todo.completed }
               return todo;
           }))
-    }
+    } 
 
   return (
     <div className = "App">
@@ -39,7 +39,7 @@ function App() {
      addTask={addTask}
       />
       {goal.map((todo) =>{
-      return (<List 
+      return (<List
         todo = {todo}
         Tap = {Tap}
         done = {done}
