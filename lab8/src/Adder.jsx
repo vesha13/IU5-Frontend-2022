@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import './App.css';
+import './App.css'; 
 
 function Adder({addTask}) {
     const[userInput, setUserInput] = useState('')
@@ -8,7 +8,7 @@ function Adder({addTask}) {
         e.preventDefault()
         addTask(userInput)
         setUserInput('')
-    } 
+    }
 
     return (
         <div onSubmit = {handleSubmit} className='Adder'>
