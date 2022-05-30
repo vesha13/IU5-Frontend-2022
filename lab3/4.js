@@ -14,7 +14,7 @@ function prettySum(arr) {
         {
             b=arr[i]+b;
         }
-    }
+    } 
     b=b*arr[arr.length-1];
     return b;
 }
