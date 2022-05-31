@@ -4,7 +4,6 @@ import { UserSearch } from "./Search";
 import search from "./search.jpg"
 import "./App.css"
 
-
 export const User :React.FC<UserProps> = ({user,userID,inputText,back}) =>
 {
     if(user.length === 0)

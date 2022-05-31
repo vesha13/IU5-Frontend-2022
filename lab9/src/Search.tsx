@@ -14,7 +14,7 @@ export const UserSearch:React.FC<SearchProps>  = ({user,back}) => {
     {
         fetch(`https://api.github.com/users/${user}` ,
         {
-            method: 'GET',
+            method: 'GET', 
             headers: {Authorization: `token ${'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'}`,},
         }).then((data)=>
         {

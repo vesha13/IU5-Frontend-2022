@@ -7,7 +7,7 @@ export const App = () =>
     const[currtUser,setUser] = useState("");
     const[currInput,setInput] = useState("")
 
-    return (
+    return ( 
     <User user={currtUser} userID={()=>setUser(()=>currInput.trim())} inputText={(id: string)=>setInput(()=>id)} back={()=>{setUser("");
     setInput("")}}/>
     );

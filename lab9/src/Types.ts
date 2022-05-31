@@ -9,8 +9,6 @@ export type UserProps =
     data ?: any;
 };
 
-
-
 export type SearchProps =
 {
     user : string;
