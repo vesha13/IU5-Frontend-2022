@@ -1,0 +1,112 @@
+nav{
+margin-left: -1vw;
+margin-right: -2vw;
+font-family: 'Macondo', cursive;
+position: relative;
+margin-top: -1.5vh;
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: space-around;
+
+background-color: #210d58;
+font-size: 2vw;
+}
+body{
+    height: 99vh;
+}
+
+html{
+    background:  linear-gradient(230.95deg, #210d58 -0.37%, #905dc6 100%);
+    color:aliceblue;
+    text-shadow: 1px 1px 2px rgb(16, 7, 43);
+}
+.mini{
+    margin-top: 1vh;
+    height: 10vw;
+    flex: none;
+    flex-grow: 0;
+    display: flex;
+    border-radius: 2vh;
+    flex-wrap: wrap;
+
+}
+input{
+    font-family: 'Macondo', cursive;
+    border-radius: 2vh;
+    font-size: 2.5vw;
+
+    margin-top: 2vh;
+    width: 17vw;
+    height: 16vh;
+    background-color: rgba(213, 185, 226, 0.872);
+
+}
+
+
+
+.change{
+    margin-left: 25vw;
+    font-family: 'Macondo', cursive;
+    font-size: 1.7vw;
+    position: relative;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 50vh;
+    width:50vw;
+    border-radius: 5vh;
+    margin-top: 15vh;
+
+}
+#cityName{
+    font-size: 6vh;
+    text-align: center;
+    align-self: center;
+    box-shadow: 1px 1px 1px rgba(57, 53, 63, 0.269);
+   background-color: rgba(57, 53, 63, 0.269);
+   border-radius: 3px;
+}
+
+#descr{
+    position: relative;
+    text-align: center;
+    align-self: center;
+    box-shadow: 1px 1px 1px rgba(57, 53, 63, 0.269);
+   background-color: rgba(57, 53, 63, 0.269);
+   border-radius: 3px;
+}
+
+.icon{
+    height: 6vh;
+    width: 6vh;
+   box-shadow: 1px 1px 1px rgba(57, 53, 63, 0.269);
+   background-color: rgba(57, 53, 63, 0.269);
+   border-radius: 3px;
+
+}
+
+#now{
+    background-size: cover;
+}
+span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 26vw;
+    box-shadow: 1px 1px 1px rgba(57, 53, 63, 0.269);
+   background-color: rgba(57, 53, 63, 0.269);
+   border-radius: 3px;
+   margin-top: 20vh;
+   margin-left: 22vw;
+}
+#tem{
+    margin-top: 7vh;
+    margin-left: 3vh;
+    box-shadow: 1px 1px 1px rgba(57, 53, 63, 0.269);
+    background-color: rgba(57, 53, 63, 0.269);
+    border-radius: 3px;
+    width: 25vw;
+
+}
