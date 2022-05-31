@@ -7,7 +7,8 @@
  */
 
 function customBind(f, context) {
-    //code here
+   let funk= (...args) => f.apply(context, args);
+   return funk
 }
 
 module.exports = customBind;

@@ -1,38 +1,77 @@
 .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
   text-align: center;
+  background-color: rgba(213, 162, 202, 0.685);
+  height:100vh;
+
+
+}
+.Adder{
+    display: flex;
+    justify-content: space-around;
+
+} 
+
+
+.out {
+    text-decoration: line-through;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.del{
+    width: 2vw;
+    background-color:whitesmoke;
+    border-radius: 1vh;
+    margin-left: 1vw;
+
+
+}
+.Button{
+    background-color: blueviolet;
+    color: blanchedalmond;
+    border-color: transparent;
+    border-radius: 2vh;
+    font-size:3vh;
+    width: 10vh;
+    height:  12vh;
+    text-align: center;
+    margin-right: 40vw;
+    margin-top: 9vh;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input{
+    margin-left: 20vw;
+    margin-top: 12vh;
+    width: 20vw;
+    height:  4vh;
+    border-radius: 1vh;
+    border-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.List{
+    margin-top: 4vh;
+    margin-left: -10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    width: 20vw;
+    justify-content: space-around;
+    background-color: rgba(178, 219, 178, 0.548);
+    border-radius: 1vh;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.head{
+    height: 15vh;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: beige;
 }

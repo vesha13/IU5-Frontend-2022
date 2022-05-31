@@ -14,7 +14,6 @@ function multiplyArray(arr, n) {
             arr[i]=narr[i]*n;
         }
     }
-    
     return arr;
 }
 

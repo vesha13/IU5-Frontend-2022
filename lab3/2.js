@@ -31,7 +31,6 @@ function getMinMax(str) {
         min: parseFloat(min),
     }
    return  obj
-
 }
 
 module.exports = getMinMax;

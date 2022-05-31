@@ -14,7 +14,20 @@
  */
 
 function memoize(func) {
-    //code here
+
+
+    let res;
+    function final(...args)
+    {
+        let cache= (res === func(...args));
+        res = func(...args);
+        let obj={
+            cache: cache,
+            result: res
+        }
+        return obj
+    };
+    return final
 }
 
 module.exports = memoize;

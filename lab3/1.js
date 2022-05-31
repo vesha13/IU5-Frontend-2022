@@ -15,7 +15,6 @@ function capitalize(str) {
         }
         else {b+=str[i+1];}
     }
-
     return b;
 }
 
