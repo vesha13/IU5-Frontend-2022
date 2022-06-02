@@ -1,5 +1,6 @@
 .App {
     text-align: center;
+    justify-content: center;
 }
 
 .App-logo {
@@ -35,4 +36,41 @@
     to {
         transform: rotate(360deg);
     }
+}
+#pic{
+    width: 30vw;
+}
+#minipic{
+    width: 20vw;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-self: center;
+    align-items: center;
+    background-color: #61dafb;
+}
+button{ 
+    align-self: center;
+    background-color: #add9e5;
+    font-size: medium;
+    border: 2px solid;
+    border-radius: 2px;
+    border-color: rgb(4, 4, 41);
+    height: 5vh;
+
+}
+.nav{
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input{
+    width: 18vw;
+    height: 4vh;
+    font-size: medium;
 }
